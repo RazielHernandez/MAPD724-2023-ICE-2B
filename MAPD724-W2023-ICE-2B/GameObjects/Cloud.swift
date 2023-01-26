@@ -3,7 +3,6 @@ import SpriteKit
 
 class Cloud : GameObject{
     
-    
     init(){
         super.init(imageSrting: "cloud", initialScale: 1.0)
         Start()
@@ -17,7 +16,6 @@ class Cloud : GameObject{
     override func Start() {
         zPosition = Layer.cloud.rawValue
         alpha = 0.5
-        verticalSpeed = 5.0
         Reset()
     }
     
@@ -42,8 +40,9 @@ class Cloud : GameObject{
         let randomX: Int = (randomSource?.nextInt(upperBound: 524))! - 262
         position.x = CGFloat(randomX)
         
-        let randomY: Int = (randomSource?.nextInt(upperBound: 30))! - 902
+        let randomY: Int = (randomSource?.nextInt(upperBound: 30))! + 902
         position.y = CGFloat(randomY)
+        
         isColliding = false
     }
     
