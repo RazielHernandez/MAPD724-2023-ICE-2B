@@ -1,10 +1,11 @@
 import GameplayKit
 import SpriteKit
 
-class Ocean: GameObject{
+class Islands : GameObject{
+    
     
     init(){
-        super.init(imageSrting: "ocean", initialScale: 2.0)
+        super.init(imageSrting: "island", initialScale: 2.0)
         Start()
     }
     
@@ -13,9 +14,9 @@ class Ocean: GameObject{
     }
     
     override func Start() {
-        zPosition = Layer.ocean.rawValue
+        zPosition = Layer.island.rawValue
         verticalSpeed = 5.0
-        
+        Reset()
     }
     
     override func Update() {
@@ -24,13 +25,17 @@ class Ocean: GameObject{
     }
     
     override func CheckBound() {
-        if (position.y <= -2253){
+        if (position.y <= -876){
             Reset()
         }
+        
     }
     
     override func Reset() {
-        position.y = 2253
+        position.y = 876
+        let randomX: Int = (randomSource?.nextInt(upperBound: 626))! - 313
+        position.x = CGFloat(randomX)
+        isColliding = false
     }
     
     func Move(){

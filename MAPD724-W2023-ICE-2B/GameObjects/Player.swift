@@ -13,7 +13,7 @@ class Player : GameObject{
     }
     
     override func Start() {
-        zPosition = 2
+        zPosition = Layer.plane.rawValue
         Reset()
     }
     

@@ -74,6 +74,8 @@
 		8E2A3A7F2981F6BA00F2A17A /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A3A7D2981F6BA00F2A17A /* GameObject.swift */; };
 		8E2A3A832981F6C200F2A17A /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A3A812981F6C200F2A17A /* Ocean.swift */; };
 		8E2A3A842981F6C200F2A17A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A3A822981F6C200F2A17A /* Player.swift */; };
+		8E2A3A862981FCF600F2A17A /* Islands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A3A852981FCF600F2A17A /* Islands.swift */; };
+		8E2A3A882981FDE300F2A17A /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A3A872981FDE300F2A17A /* Layer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +147,8 @@
 		8E2A3A7D2981F6BA00F2A17A /* GameObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		8E2A3A812981F6C200F2A17A /* Ocean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
 		8E2A3A822981F6C200F2A17A /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		8E2A3A852981FCF600F2A17A /* Islands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Islands.swift; sourceTree = "<group>"; };
+		8E2A3A872981FDE300F2A17A /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +295,7 @@
 			children = (
 				8E2A3A7C2981F6BA00F2A17A /* GameProtocol.swift */,
 				8E2A3A7D2981F6BA00F2A17A /* GameObject.swift */,
+				8E2A3A872981FDE300F2A17A /* Layer.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 			children = (
 				8E2A3A812981F6C200F2A17A /* Ocean.swift */,
 				8E2A3A822981F6C200F2A17A /* Player.swift */,
+				8E2A3A852981FCF600F2A17A /* Islands.swift */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -438,6 +444,8 @@
 				8E2A39F22981F54000F2A17A /* AppDelegate.swift in Sources */,
 				8E2A3A842981F6C200F2A17A /* Player.swift in Sources */,
 				8E2A3A832981F6C200F2A17A /* Ocean.swift in Sources */,
+				8E2A3A882981FDE300F2A17A /* Layer.swift in Sources */,
+				8E2A3A862981FCF600F2A17A /* Islands.swift in Sources */,
 				8E2A3A7F2981F6BA00F2A17A /* GameObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
