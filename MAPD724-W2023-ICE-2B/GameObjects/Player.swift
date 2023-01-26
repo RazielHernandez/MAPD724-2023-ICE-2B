@@ -38,7 +38,7 @@ class Player : GameObject{
     }
     
     override func Reset() {
-        position.y = -495
+        position.y = -500
     }
     
     func TouchMove(newPos: CGPoint){
